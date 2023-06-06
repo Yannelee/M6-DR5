@@ -1,22 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Ghibli/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Ghibli from "@/components/Ghibli.vue"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Ghibli
+  },
+  methods:{
   }
 }
 </script>
 
 <style>
+body{
+  height: 100%;
+  width: 100%;
+  background: url(@/assets/ghib.jpeg) center repeat fixed;
+  background-size: 20%;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
